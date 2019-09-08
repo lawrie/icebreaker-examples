@@ -113,7 +113,20 @@ module vga_timing
    output reg          vga_vsync
  );// module vga_timing
 
+// 640x240 20.175MHz 60Hz
+`define def_h_sync     16'd96
+`define def_h_bp       16'd48 
+`define def_h_actv     16'd640
+`define def_h_fp       16'd16
+`define def_h_total    16'd800
+`define def_v_sync     16'd2
+`define def_v_bp       16'd31 
+`define def_v_actv     16'd480
+`define def_v_fp       16'd11
+`define def_v_total    16'd524 
+
 // 800x600 40MHz 60Hz
+/*
 `define def_h_sync     16'd128
 `define def_h_bp       16'd88 
 `define def_h_actv     16'd800
@@ -124,6 +137,7 @@ module vga_timing
 `define def_v_actv     16'd600
 `define def_v_fp       16'd1 
 `define def_v_total    16'd628 
+*/
 
 // 1280x1024 108MHz 60Hz
 /*

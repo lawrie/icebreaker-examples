@@ -95,10 +95,8 @@ module top
 //-----------------------------------------------------------------------------
 SB_PLL40_PAD #(
   .DIVR(4'b0000),
-  // 40MHz ish to be exact it is 39.750MHz
-  //.DIVF(7'b0110111), // 42MHz
-  .DIVF(7'b0110101), // 39.750MHz
-  .DIVQ(3'b100),
+  .DIVF(7'b1000010), // 25.125MHz
+  .DIVQ(3'b101),
   .FILTER_RANGE(3'b001),
   .FEEDBACK_PATH("SIMPLE"),
   .DELAY_ADJUSTMENT_MODE_FEEDBACK("FIXED"),
